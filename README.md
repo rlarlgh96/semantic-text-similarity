@@ -1,0 +1,37 @@
+# Semantic Text Similarity(STS)
+
+## 프로젝트 개요
+### 대회 소개
+<img width="641" alt="introduction" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/f6c8324d-453a-432c-ab29-35f777ddac47"><br>
+
+본 프로젝트는 네이버 부스트캠프 AI Tech 6기 NLP 트랙 과정에서 진행한 교육용 대회 프로젝트이다.
+
+Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하는 NLP task로, 본 대회에서는 Bert 모델을 사용해 입력으로 주어진 두 문장의 문맥적 유사도를 측정한다.
+
+## 프로젝트 수행 과정
+### EDA
+- 데이터셋에서 label 분포를 확인한 결과, 학습 데이터셋에서 다음과 같이 불균형한 분포를 보였다.<br>
+![label_distribution(train)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/339252a6-9b55-4594-a68e-48dd63c9b2b5)
+![label_distribution(dev)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/922c4e11-7344-469e-bf2f-100deaa293a7)
+
+### Data Augmentation
+#### Sentence Swap
+- 모든 데이터에 대해 sentence1와 sentence2를 뒤바꿔 데이터를 2배로 증강했다.
+
+#### Sentence Copy and Reversal
+- label이 0.0점인 데이터로부터 sentence1과 sentence1을 쌍으로 갖는 데이터를 만들어 5.0점 데이터를 증강했다.
+- label이 5.0점인 데이터로부터 sentence1과 sentence1을 뒤집은 문장을 쌍으로 갖는 데이터를 만들어 0.0점 데이터를 증강했다.
+
+#### Data Resampling
+- 데이터셋의 label 불균형 문제를 해소하기위해 Data Resampling을 진행했다.
+- label을 정수 범위(0-1, 1-2, 2-3, 3-4, 4-5)로 나누어 데이터가 가장 많은 범위를 기준으로 오버샘플링을 적용했다.
+
+![label_distribution](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/a4e13f5c-a1ba-4cd2-a4bb-f27eeeeb269e)
+
+## 프로젝트 수행 결과
+- 프로잭트 수행 결과, 모델의 성능이 0.0018점 향상되었다.
+  
+  | model | score |
+  |--------|--------|
+  | Baseline | 0.8908 |
+  | Data Augmentation | 0.8926 |
