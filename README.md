@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 ### 대회 소개
-<img width="641" alt="introduction" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/f6c8324d-453a-432c-ab29-35f777ddac47"><br>
+<img width="641" alt="introduction" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/b1a8bf53-3704-4291-9618-a1045d4a3d55"><br>
 
 본 프로젝트는 네이버 부스트캠프 AI Tech 6기 NLP 트랙 과정에서 진행한 교육용 대회 프로젝트이다.
 
@@ -11,8 +11,8 @@ Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하�
 ## 프로젝트 수행 과정
 ### EDA
 - 데이터셋에서 label 분포를 확인한 결과, 학습 데이터셋에서 다음과 같이 불균형한 분포를 보였다.<br>
-![label_distribution(train)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/339252a6-9b55-4594-a68e-48dd63c9b2b5)
-![label_distribution(dev)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/922c4e11-7344-469e-bf2f-100deaa293a7)
+![label_distribution(train)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/80fba964-4337-4fa2-ae38-8a3fe8bb0826)
+![label_distribution(dev)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/0aaf3cd0-cbe4-4087-9a85-16585470beb5)
 
 ### Data Augmentation
 #### Sentence Swap
@@ -26,7 +26,7 @@ Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하�
 - 데이터셋의 label 불균형 문제를 해소하기위해 Data Resampling을 진행했다.
 - label을 정수 범위(0-1, 1-2, 2-3, 3-4, 4-5)로 나누어 데이터가 가장 많은 범위를 기준으로 오버샘플링을 적용했다.
 
-![label_distribution](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/a4e13f5c-a1ba-4cd2-a4bb-f27eeeeb269e)
+![label_distribution(augmented)](https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/75fd1793-2a97-4d5a-9bb8-b645957eef68)
 
 ## 프로젝트 수행 결과
 - 프로잭트 수행 결과, 모델의 성능이 0.0018점 향상되었다.
