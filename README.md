@@ -26,7 +26,7 @@ Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하�
 <img width="500" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/75fd1793-2a97-4d5a-9bb8-b645957eef68"><br>
 
 ## 프로젝트 수행 결과
-- 평가 데이터셋에서 모델의 성능이 0.0018점 향상되었다.
+- 프로젝트 수행 결과, 평가 데이터셋에서 모델의 성능을 0.0018점 향상시켰다.
   
   | model | score |
   |--------|--------|
