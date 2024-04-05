@@ -8,7 +8,7 @@ Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하�
 
 ## 프로젝트 수행 과정
 ### EDA
-- 데이터셋에서 label 분포를 확인한 결과, 학습 데이터셋에서 다음과 같이 불균형한 분포를 보였다.<br>
+- 학습 데이터셋에서 label 분포를 확인한 결과, 다음과 같이 불균형한 분포를 보였다.<br>
 <img width="500" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/80fba964-4337-4fa2-ae38-8a3fe8bb0826"><br>
 <img width="500" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/0aaf3cd0-cbe4-4087-9a85-16585470beb5"><br>
 
