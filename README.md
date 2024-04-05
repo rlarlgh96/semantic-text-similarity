@@ -3,8 +3,12 @@
 ## 프로젝트 개요
 ### 대회 소개
 <img width="750" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/b1a8bf53-3704-4291-9618-a1045d4a3d55"><br>
-본 프로젝트는 네이버 부스트캠프 AI Tech 6기 NLP 트랙 과정에서 진행한 교육용 대회 프로젝트이다.<br>
-Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하는 NLP task로, 본 대회에서는 Bert 모델을 사용해 입력으로 주어진 두 문장의 문맥적 유사도를 측정한다.
+- 본 프로젝트는 네이버 부스트캠프 AI Tech 6기 NLP 트랙 과정에서 진행한 교육용 대회 프로젝트이다.
+- Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하는 NLP task로, 본 대회에서는 Bert 모델을 사용해 입력으로 주어진 두 문장의 문맥적 유사도를 측정한다.
+
+### 평가 방법
+<img width="750" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/f7c64d39-f8d8-49ba-b1d0-59ecfdd38224">
+- 본 대회에서는 예측값 집합과 정답 집합간의 유사도를 나타내는 피어슨 상관계수를 평가 지표로 사용한다. 따라서, 유사도 점수를 정확히 예측하는 것보다, 높은 값은 확실히 높게, 낮은 값은 확실히 낮게, 전체적인 경향을 잘 예측하는 것이 중요하다.
 
 ## 프로젝트 수행 과정
 ### EDA
