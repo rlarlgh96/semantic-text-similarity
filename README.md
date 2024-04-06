@@ -4,7 +4,7 @@
 ### 대회 소개
 <img width="750" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/b1a8bf53-3704-4291-9618-a1045d4a3d55"><br>
 - 본 프로젝트는 네이버 부스트캠프 AI Tech 6기 NLP 트랙 과정에서 진행한 교육용 대회 프로젝트이다.
-- Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하는 NLP task로, 본 대회는 입력으로 주어진 두 문장의 문맥적 유사도를 예측하는 대회이다.
+- Semantic Text Similarity(STS)는 두 문장이 얼마나 유사한지 판단하는 NLP task로, 입력으로 주어진 두 문장의 문맥적 유사도를 예측하는 대회이다.
 
 ### 평가 방법
 <img width="750" alt="67cdc709-0370-467b-9905-157d7662bd0c" src="https://github.com/rlarlgh96/semantic-text-similarity/assets/121072239/3e530c12-01fd-448c-b969-3f5545f5fd2d"><br>
